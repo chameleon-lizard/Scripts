@@ -7,4 +7,4 @@ echo "Recording into ~/Videos/Recordings/$NAME..."
 
 ffmpeg -loglevel panic -video_size $RESOLUTION -framerate 25 -f x11grab -i :0.0+0,0 $NAME
 
-mv $NAME /home/chameleon/Videos/Recordings
+mv $NAME $HOME/Videos/Recordings
