@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 
 echo "Please, provide a link to a Youtube Music album."
 

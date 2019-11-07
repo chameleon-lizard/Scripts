@@ -1,9 +1,7 @@
 #!/bin/bash
-WALL_DIR="$HOME/Pictures/Wallpapers"
 
-FILES=($WALL_DIR/*)
-PICT=`printf "%s\n" "${FILES[RANDOM % ${#FILES[@]}]}"`
+IMAGE=$(wpg -m | grep .config)
 
-wal -i $PICT -o wal-set
+feh --bg-fill ${IMAGE}
 
 ~/.telegram-palette-gen/telegram-palette-gen --wal
