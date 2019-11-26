@@ -33,3 +33,7 @@ i3lock \
         --verifcolor="$verifcolor" --timecolor="$timecolor" --datecolor="$datecolor" \
         --time-font="$font" --date-font="$font" --layout-font="$font" --verif-font="$font" --wrong-font="$font" \
         --noinputtext='' --force-clock --pass-media-keys $lockargs 
+
+rm -rf ~/.config/wpg/wallpapers
+mkdir ~/.config/wpg/wallpapers
+cp ~/Pictures/Wallpapers/* ~/.config/wpg/wallpapers
