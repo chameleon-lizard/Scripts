@@ -20,6 +20,7 @@ lock_timeout=5
 BLUR="5x4"
 PICTURE=$(cat ~/.fehbg | awk '{ print $4 }' | tr -d "'")
 convert $PICTURE -blur $BLUR $PICTURE
+<<<<<<< HEAD
 
 caps_status=`xset q | grep -i caps | cut -c 22-24`
 
@@ -36,6 +37,9 @@ then
     ; i3lock \
         --ignore-empty-password \
         --nofork                \
+=======
+i3lock \
+>>>>>>> 00e5c6036e0d35a09583097eee8b4a635a023f4a
         -t -i $PICTURE \
         --timepos='x+110:h-70' \
         --datepos='x+43:h-45' \
@@ -47,15 +51,22 @@ then
         --radius=20 --ring-width=4 --veriftext='' --wrongtext='' \
         --verifcolor="$verifcolor" --timecolor="$timecolor" --datecolor="$datecolor" \
         --time-font="$font" --date-font="$font" --layout-font="$font" --verif-font="$font" --wrong-font="$font" \
+<<<<<<< HEAD
         --noinputtext='' --force-clock --pass-media-keys -e \
         \
     ; setxkbmap -option grp:alt_space_toggle "us,ru"
 fi
+=======
+        --noinputtext='' --force-clock --pass-media-keys $lockargs 
+>>>>>>> 00e5c6036e0d35a09583097eee8b4a635a023f4a
 
 rm -rf ~/.config/wpg/wallpapers
 mkdir ~/.config/wpg/wallpapers
 cp ~/Pictures/Wallpapers/* ~/.config/wpg/wallpapers
+<<<<<<< HEAD
 
 # --datestr="%d %B - %A"  \
 # --image="/home/alex/Scripts/wallpapers/day" \
 # --image=/home/alex/.config/i3/wallpapers/wallpaper \
+=======
+>>>>>>> 00e5c6036e0d35a09583097eee8b4a635a023f4a
