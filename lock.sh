@@ -47,7 +47,7 @@ then
         --radius=20 --ring-width=4 --veriftext='' --wrongtext='' \
         --verifcolor="$verifcolor" --timecolor="$timecolor" --datecolor="$datecolor" \
         --time-font="$font" --date-font="$font" --layout-font="$font" --verif-font="$font" --wrong-font="$font" \
-        --noinputtext='' --force-clock --pass-media-keys -e \
+        --noinputtext='' --force-clock --pass-media-keys \
         \
     ; setxkbmap -option grp:alt_space_toggle "us,ru"
 fi
