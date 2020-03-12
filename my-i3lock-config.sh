@@ -55,7 +55,3 @@ fi
 rm -rf ~/.config/wpg/wallpapers
 mkdir ~/.config/wpg/wallpapers
 cp ~/Pictures/Wallpapers/* ~/.config/wpg/wallpapers
-
-# --datestr="%d %B - %A"  \
-# --image="/home/alex/Scripts/wallpapers/day" \
-# --image=/home/alex/.config/i3/wallpapers/wallpaper \
